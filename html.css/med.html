@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--contenu la derniere version de HTML 5 dans la source-->
+<html lang="fr">
+    <!--contient la langue de code-->
+
+<head>
+    <!--contient les met adonne de la page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--cette balise garantit que la page est resposive (adjuste de ecran)-->
+    <meta charset="UTF-8">
+</head>
+<title>alpha</title>
+<!--le titre qui s affiche dans l onglet-->
+<link rel="icon" href="images/th.jpeg" type="th/png">
+<meta name="description" content="best cousrt html and css">
+<meta name="keyword" content="html,css,HTML,CSS">
+<meta name="author" content="med amin">
+<title>page web</title>
+</head>
+
+<body>
+    <!--CONTIENT tout les contunu visible de la page-->
+    <header>
+        <!--represent l en tete de la page-->
+        <h1>welcome to my page</h1>
+        <h2>hello this my contist</h2>
+        <h3>bounjour</h3>
+        <h4>welcome</h4>
+        <h5>hi</h5>
+        <h6>hello for my test web site</h6>
+        <nav>
+            <!--contient un menu de navigator-->
+            <a href="#section1">section 1</a>
+            <a href="#section2">section 2</a>
+            <a href="#formulaire">formulaire 3</a>
+        </nav>
+    </header>
+    <main>
+        <!--le contenu praincipale de la page --> 
+<section id="#section1">
+    <!-- section divise le contenu -->
+     <h2> les balise de structure</h2>
+     <article>
+        <!--le contenu autonom-->
+        <h3> les titre 1 6 </h3>
+        <p>html propose 6 nivaux de titre</p>
+        <h1>titre h1</h1>
+        <h2>titre h2</h2>
+        <h3>titre h3</h3>
+        <h4>titre h4</h4>
+        <h5>titre h5</h5>
+        <h6>titre h6</h6>
+        <a href="https://www.msn.com">visiter microsof</a>
+        <dl>
+            <dt>terme 1</dt>
+            <dd>definition de terme 1</dd>
+            <dt>terme2</dt>
+            <dd>definition de terme 2</dd>
+        </dl>
+     </article>
+     <article>
+        <p>utilise la milieu pour seul de ligne  <br> deuxieme ligne</p>
+        <pre>     ceci est un text 
+                     et
+                    des retour a la ligne conserve
+        </pre>
+     </article>
+     <article>
+        <h3>liste ordonne et non ordonne</h3>
+        <p>les liste permettant d organiseer des element: </p>
+        <h4>liste ordonne</h4>
+        <ol>
+            <li>premier element</li>
+            <li>deuxieme element</li>
+        </ol>
+        <h4>les list non organise</h4>
+        <ul>
+            <li>premiere eliment</li>
+            <li>deuxieme eliment</li>
+        </ul>
+     </article>
+</section>
+<section id="#section2">
+    <h2>les balise des contenu etulise</h2>
+    <h3>images</h3>
+    <!--afficher l image don la page dela page web-->
+    <img src="https://th.bing.com/th/id/R.41f2969e29d8358bd7e5a613b9bd812c?rik=EIabAVE7zs%2fBgg&pid=ImgRaw&r=0"
+    alt="porche 911">
+    <img src="image test.jpeg"
+    alt="cat">
+<h3>video et audio</h3>
+<p>exemple de video HTMLS</p>
+<video src="video/video test.mp4" width="320" height="240" controls>
+</video>
+<p>exemple d audio</p>
+<audio controls>
+    <source src="audio/reverse-crash-fx.wav" type="audio/wav">
+    votre navigator ne support pas la lecture de la source 
+</audio>
+<table border="1">
+    <!--lingne de tete de tableaux-->
+    <tr>
+        <th>mom</th><!--en tete de colone-->
+        <th>prenom</th><!--en tete de colone-->
+        <th>age</th><!--en tete de colone-->
+    </tr>
+    <!--les information de tableaux-->
+    <tr>
+        <td>med</td><!--cellule contenu de colone-->
+        <td>el bali</td><!--cellule contenu de colone-->
+        <td>19</td><!--cellule contenu de colone-->
+    </tr>
+    <tr>
+        <td>bob</td><!--cellule contenu de colone-->
+        <td>mathew</td><!--cellule contenu de colone-->
+        <td>20</td><!--cellule contenu de colone-->
+    </tr>
+</table>
+<br>
+<table border="1">
+    <tr>
+        <th colspan="3">liste des utilisateur</th>
+    </tr>
+    <tr>
+        <th>mom</th><!--en tete de colone-->
+        <th>prenom</th><!--en tete de colone-->
+        <th>age</th><!--en tete de colone-->
+    </tr>
+    <!--les information de tableaux-->
+    <tr>
+        <td>med</td><!--cellule contenu de colone-->
+        <td>el bali</td><!--cellule contenu de colone-->
+        <td>19</td><!--cellule contenu de colone-->
+    </tr>
+    <tr>
+        <td>bob</td><!--cellule contenu de colone-->
+        <td>mathew</td><!--cellule contenu de colone-->
+        <td>20</td><!--cellule contenu de colone-->
+    </tr>
+</table>
+<br>
+<table border="2">
+    <tr>
+        <th>mom</th><!--en tete de colone-->
+        <th>age</th><!--en tete de colone-->
+    </tr>
+    <tr>
+        <td rowspan="2">med</td>
+        <td>19</td>
+    </tr>
+    <tr>
+        <td>31</td>
+    </tr>
+    <tr>
+        <td rowspan="3">bob</td><!--cellule contenu de colone-->
+        <td>20</td><!--cellule contenu de colone-->
+    </tr>
+</table>
+</section>
+<section id="#formulaire">
+<h2>les balise de formulaire</h2>
+<form action="#formulaire" method="post">
+    <!--permet de cree un formulaire HTML-->
+    <label for="nom">nom</label>
+    <input type="text" id="nom" name="nom" placeholder="entre votre nom">
+    <!--cree un chemp de saisi-->
+    <br>
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" placeholder="entre votre email">
+    <br>
+    <label for="password">mot de pass</label>
+    <input type="password" id="password" name="password" placeholder="entre votre mot de pass">
+    <br>
+    <label for="date">date de naissance</label>
+    <input type="date" id="date" name="date de naissance" required>
+    <br>
+    <label for="age">age</label>
+    <input type="number" id="age" name="age" min="1" max="120" required>
+    <fieldset>
+        <!--regrouper des chemp dans un formulaire-->
+        <legend>Genre</legend>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">homme</label>
+
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">femme</label>
+    </fieldset>
+        <label for="pays">pays :</label>
+    
+        <select id="pays" name="pays">
+        <!--cree une list deroulid-->
+        <option value="maroc">maroc</option>
+        <option value="france">france</option>
+        <option value="belgique">belgique</option>
+        </select>
+       
+</form>
+</section>
+    </main>
+</body>
+</html>

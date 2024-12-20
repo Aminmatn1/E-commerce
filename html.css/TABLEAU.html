@@ -1,0 +1,54 @@
+<!-- Table pour afficher le calcul de la moyenne -->
+<table border="1" >
+
+    <!-- Titre de la table : "Calcul de la moyenne" -->
+    <caption>Calcul de la moyenne</caption>
+    
+    <!-- En-tête du tableau, décrivant chaque colonne -->
+    <thead>
+      <tr> 
+        <th>Matières</th> <!-- Colonne pour les noms des matières -->
+        <th>Note par matière</th> <!-- Colonne pour les notes obtenues -->
+        <th>Coefficient</th> <!-- Colonne pour les coefficients des matières -->
+        <th>Note*Coefficient</th> <!-- Colonne pour le produit Note x Coefficient -->
+      </tr> 
+    </thead> 
+    
+    <!-- Corps du tableau contenant les données pour chaque matière -->
+    <tbody> 
+      <tr> 
+        <td>Mathematique</td> <!-- Matière : Mathématiques -->
+        <td>17</td> <!-- Note obtenue : 17 -->
+        <td>4</td> <!-- Coefficient : 4 -->
+        <td>68</td> <!-- Produit Note x Coefficient : 17 * 4 = 68 -->
+      </tr> 
+      <tr> 
+        <td>Physique</td> <!-- Matière : Physique -->
+        <td>15</td> <!-- Note obtenue : 15 -->
+        <td>3</td> <!-- Coefficient : 3 -->
+        <td>45</td> <!-- Produit Note x Coefficient : 15 * 3 = 45 -->
+      </tr>   
+      <tr> 
+        <td>Informatique</td> <!-- Matière : Informatique -->
+        <td>16</td> <!-- Note obtenue : 16 -->
+        <td>2</td> <!-- Coefficient : 2 -->
+        <td>32</td> <!-- Produit Note x Coefficient : 16 * 2 = 32 -->
+      </tr>
+      
+      <!-- Ligne pour les totaux -->
+      <tr> 
+        <td colspan="2">Totals</td> <!-- Cellule fusionnée pour le libellé "Totals" -->
+        <td>9</td> <!-- Total des coefficients : 4 + 3 + 2 = 9 -->
+        <td>145</td> <!-- Total des produits Note x Coefficient : 68 + 45 + 32 = 145 -->
+      </tr> 
+    </tbody> 
+    
+    <!-- Pied de tableau pour afficher la moyenne en couleur bleue -->
+    <tfoot style="color:aqua"> 
+      <tr> 
+        <td colspan="3">Moyenne</td> <!-- Cellule fusionnée pour le libellé "Moyenne" -->
+        <td>16.12</td> <!-- Résultat de la moyenne pondérée : 145 / 9 ≈ 16.12 -->
+      </tr> 
+    </tfoot>
+  </table>
+  

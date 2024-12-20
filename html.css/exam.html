@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="alpha.css">
+    <title>profile avance</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;/*style d eciture*/
+            margin: 0;/*suprise la marige defaut du corps de la page*/
+            padding: 0;/*suprise la padding par defaut de corps de la page*/
+            line-height: 1.6;/*augment l espacement entre les ligne pour ameliore la lisibilite*/
+             }
+             nav{
+                background-color: rgb(61, 61, 61);/*aficher les color de backround*/
+                color: white;
+                padding: 10px;/*ajout des espacement interne des site*/
+                text-align: center;/*centre de text*/
+             }
+             nav ul{
+                list-style: none;/*supeime les liste d ordonne */
+                padding: 0;/*suprise la padding par defaut de corps de la page*/
+                margin: 0;/*suprise la marige defaut du corps de la page*/
+                display: flex;/*utilise un modele [vertical ou horizontal]*/
+                justify-content: center;/*centre les element de la liste*/
+             }
+             nav ul li{
+                margin: 0 15px;/*ajout un espace de a5px a gauche st a la droit de chaque element*/
+             }
+             nav ul li a{
+                color: aliceblue;
+                text-decoration: none;/*suprime le soulingement par defaut des lien*/
+             }
+             section{
+                padding: 20px;/*ajoute un espacement interne de 20px a chaque section*/
+             }
+             img{
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+             }
+             table{
+                border-collapse: collapse;/*fusinne les border de cellule pour une apprence..*/
+                width: 100%;
+                margin-top: 10px;
+             }
+             table,th,td{
+                border: 1px solid rgb(61, 61, 61)
+             }
+             th,td{
+                padding: 8px;
+                text-align: left;
+             }
+             .portofolio{
+                display:grid ;/*utlise une grille pour organiser les element*/
+                grid-template-columns: repeat(3,1fr);/*les coordonnee de class*/
+                gap: 50px;
+                margin-top: 20px;
+             }
+             .portofolio-item {
+                border: 1px solid rgb(133, 133, 133);/*cadre de chaque class et son color*/
+                padding: 10px;/*adgent les deplacement de chaque calssment*/
+             }
+             
+             /*le bas de page web*/
+
+             footer{
+                background-color: rgb(61, 61, 61);
+                color: rgb(255, 254, 219);
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+             }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#accueil">accueil</a></li>
+            <li><a href="#info">information personnal</a></li>
+            <li><a href="#portofolio">portofolio</a></li>
+        </ul>
+    </nav>
+</body>
+<section id="accueil">
+    <h1>bienvenu sur le profile avence:</h1>
+    <p>Cette page présente mes informations personnelles et professionnelles ainsi que mon portfolio, où vous découvrirez mes projets, mes compétences et mes réalisations. Passionné(e) par [votre domaine, par exemple, "la création graphique" ou "le développement web"], je m’efforce de transformer des idées en solutions concrètes et impactantes. Parcourez mes travaux pour en savoir plus sur mon expertise et n’hésitez pas à me contacter pour collaborer sur vos prochains projets !    </p>
+</section>
+<section id="info">
+    <h2>information personnal:</h2>
+    <img src="data:image/jpeg;base64,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" alt="nature">
+    <table>
+        <tr>
+            <td>age:</td><!--en tete de colone-->
+            <td>20 ans</td><!--en tete de colone-->
+        </tr>
+        <tr>
+            <th>ville:</th>
+            <th>paris</th>
+        </tr>
+        <tr>
+            <th>professionel:</th>
+            <th>devolopement de web</th>
+        </tr>
+        <tr>
+            <th>langue:</th>
+            <th>francais</th>
+        </tr>
+    </table>
+</section>
+<section id="portofolio">
+    <h2>portofolio:</h2>
+    <label for="categorie">filter par categorie:</label>
+    <select id="categorie">
+        <option value="all">tous</option>
+        <option value="web">web</option>
+        <option value="mobil">mobil</option>
+        <option value="data">data science</option>
+    </select>
+</section>
+<div class="portofolio">
+    <div class="portofolio-item">
+        <h3>projet web:</h3>
+        <p>site de commerce electron</p>
+        <a href="https://www.microsoft.com/en-us/?msockid=17b1e6e79630630e2c6cf3df97f762f4" target="_blank">voir le projet</a>
+    </div>
+    <div class="portofolio-item">
+        <h3>application:</h3>
+        <p>application de guestion de tache</p>
+        <a href="https://www.microsoft.com/en-us/?msockid=17b1e6e79630630e2c6cf3df97f762f4" target="_blank">voir le projet</a>
+    </div>
+    <div class="portofolio-item">
+        <h3>analyse de donne:</h3>
+        <p>analyse de predective de tache</p>
+        <a href="https://www.microsoft.com/en-us/?msockid=17b1e6e79630630e2c6cf3df97f762f4" target="_blank">voir le projet</a>
+    </div>
+</div>
+<section id="contact">
+    <h2>contactez moi:</h2>
+    <form action="#" method="post">
+        <label for="nom">nom </label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+        
+        <label for="email">entre votre email </label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="tel">number</label><br>
+        <input type="tel" id="tel" name="tel" placeholder="+212 0608891724"><br><br>
+        
+        <label for="message">entre votre text</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">envoyer</button>
+    </form>
+</section>
+<section id="map">
+    <h2>my localisation:</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096163!2d144.95373531550446!3d-37.81627974202185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5777c3e4f2c052!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1633082134121!5m2!1sen!2sau"
+     width="100%" 
+     height="300" 
+     style="border:1;" 
+     allowfullscreen="" loading="lazy">
+    </iframe>
+</section>
+<footer>
+    <p>suivie moi:</p>
+    <a href="https://x.com/?lang=en" target="_blank">twiter</a>
+    <a href="https://github.com/" target="_blank">github</a>
+    <a href="https://youtube.com/" target="_blank">youtube</a>
+    <p>&copy;2024 profile avance.tout droit reserve</p>
+</footer>
